@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Coino | Spending Insights</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="bg-orb orb-1"></div>
+    <div class="bg-orb orb-2"></div>
+
+    <header class="site-header glass">
+      <a class="logo" href="index.html"><img src="logo.svg" alt="Coino logo" /><span>Coino</span></a>
+      <nav class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="budget-planner.html">Budget Planner</a>
+        <a href="savings-goals.html">Savings Goals</a>
+      </nav>
+      <button id="themeToggle" class="theme-toggle" aria-label="Toggle theme"><span class="sun">☀️</span><span class="moon">🌙</span></button>
+    </header>
+
+    <main class="container">
+      <section class="glass reveal page-title">
+        <h1>Spending Insights</h1>
+        <p>Tap categories to compare how much you spend each week.</p>
+      </section>
+
+      <section class="glass insights reveal delay-1">
+        <div class="pill-row" id="categoryFilters">
+          <button class="pill active" data-mult="1">All</button>
+          <button class="pill" data-mult="0.8">School</button>
+          <button class="pill" data-mult="1.3">Snacks</button>
+          <button class="pill" data-mult="1.1">Games</button>
+        </div>
+
+        <div class="insight-bars" id="insightBars">
+          <div class="bar-wrap"><span>Mon</span><i style="--v:55"></i></div>
+          <div class="bar-wrap"><span>Tue</span><i style="--v:70"></i></div>
+          <div class="bar-wrap"><span>Wed</span><i style="--v:48"></i></div>
+          <div class="bar-wrap"><span>Thu</span><i style="--v:80"></i></div>
+          <div class="bar-wrap"><span>Fri</span><i style="--v:92"></i></div>
+        </div>
+      </section>
+    </main>
+
+    <script src="app.js"></script>
+  </body>
+</html>
